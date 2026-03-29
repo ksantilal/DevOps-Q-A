@@ -54,5 +54,26 @@ AWS
     * AWS KMS
     * AWS Cognito
 
+* what is vpc ?
+    * A VPC (Virtual Private Cloud) is a logically isolated network in AWS where you can launch resources like EC2 instances.
+* what is subnet ?
+    * A subnet is a subdivision of a VPC’s IP range.
+        * Public Subnet → Has internet access
+        * Private Subnet → No direct internet access
 
+        * Example:
+            * VPC: 10.0.0.0/16
+            * Subnet: 10.0.1.0/24
+            
+* what is security group ?
+    * A Security Group is a virtual firewall at the instance level that controls inbound and outbound traffic.
+
+* what is internet gateway ?
+    * An Internet Gateway (IGW) is a component that allows communication between your VPC and the internet.
+
+* what is nat gateway ?
+    * A NAT Gateway allows private subnet instances to access the internet (for updates, downloads) without being exposed to the internet.
+
+* What is Elastic Load balancer?
+    * A Load Balancer is a service that distributes incoming network traffic across multiple servers (e.g., EC2 instances) to ensure high availability, reliability, and performance.
 
