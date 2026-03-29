@@ -18,3 +18,5 @@ Our first Docker work - Containerize your application:
     * Server/engine
 * Client: This is the command line tool which we use to interact with docker engine
   - docker info 
+
+* Virtual machine providing the hardware resources.

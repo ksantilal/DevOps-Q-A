@@ -16,18 +16,6 @@
 * Solomon Hykes had first demonstrated docker in a pycon and it become overnight success.
 * Docker made container creation easy.
 
-Physical Mashine , Virtual Machine , Containerization
-
-IaaS 
-PaaS
-SaaS
-Cloud types
-Hybrid Cloud, 
-Cloud AWS  => Azure
-Compute 
-IAM 
-Storage 
-Networking 
 Linux
 Shell/Bash Scripting,Yaml,Python
 CICD => Jenkins , GitHub Action
