@@ -1,51 +1,149 @@
-Linux
----------------------------
-* Linux Commands: Cheet Sheet
+# 🐧 Linux Commands Cheat Sheet
 
-    * `ls` => list the files and directories in current directory
-    * `cd` => change the directory
-    * `pwd` => print the current working directory
-    * `mkdir` => make a new directory
-    * `rm` => remove a file or directory
-    * `cp` => copy a file or directory
-    * `mv` => move a file or directory
-    * `cat` => concatenate and display the content of a file
-    * `echo` => display a line of text or variable value
-    * `grep` => search for a specific pattern in a file or output
-    * `find` => search for files and directories based on various criteria
-    * `wohami`
-    * `ls -l`
-    * `ls -la`
-    * `ls -lart`
-    * `history`
-    * `esc: wq`, `q!`
-    * editor vi,vim,nano `vi <file name>`
-    * `chmod` => change the permissions of a file or directory
-    * `chown` => change the ownership of a file or directory
-    * `ps` => display the currently running processes
-    * `top` => display the real-time system resource usage and processes
-    * `kill` => terminate a process by its PID
-    * `tar` => archive and compress files
-    * `wget` => download files from the internet
-    * `curl` => transfer data from or to a server
-    * `df` => display the disk space usage
-    * `du` => display the disk usage of files and directories
-    * `free` => display the memory usage
-    * `uptime` => display the system uptime and load average
-    * `uname -a` => display the system information
-    * `ifconfig` => display the network interfaces and their configuration
-    * `netstat` => display the network connections and statistics
-    * `ssh` => connect to a remote server securely
-    * `scp` => securely copy files between hosts
-    * `rsync` => synchronize files and directories between hosts
-    * `alias` => create shortcuts for commands
-    * `env` => display the environment variables
-    * `export` => set environment variables
-    * `source` => execute a script in the current shell
-    * `crontab` => schedule tasks to run at specific times
-    * `systemctl` => manage system services
-    * `journalctl` => view the system logs
-    * `free -h`
-    * `df -h`
-    * `du -h`
-    
+---
+
+## 📁 File & Directory Commands
+
+| Command | Description | Example |
+|--------|------------|--------|
+| `ls` | List files/directories | `ls` |
+| `ls -l` | Detailed list | `ls -l` |
+| `ls -la` | Show hidden files | `ls -la` |
+| `ls -lart` | Sorted by time | `ls -lart` |
+| `cd` | Change directory | `cd /home` |
+| `pwd` | Show current directory | `pwd` |
+| `mkdir` | Create directory | `mkdir test` |
+| `rm` | Delete file/directory | `rm file.txt` |
+| `rm -r` | Delete directory | `rm -r folder` |
+| `cp` | Copy files | `cp file1 file2` |
+| `mv` | Move/rename files | `mv old new` |
+
+---
+
+## 📄 File Content Commands
+
+| Command | Description | Example |
+|--------|------------|--------|
+| `cat` | View file content | `cat file.txt` |
+| `echo` | Print text/variable | `echo "Hello"` |
+| `grep` | Search pattern | `grep "error" file.txt` |
+| `find` | Find files | `find / -name file.txt` |
+
+---
+
+## 👤 User & Permission Commands
+
+| Command | Description | Example |
+|--------|------------|--------|
+| `whoami` | Show current user | `whoami` |
+| `chmod` | Change permissions | `chmod 755 file` |
+| `chown` | Change ownership | `chown user file` |
+
+---
+
+## ⚙️ Process Management
+
+| Command | Description | Example |
+|--------|------------|--------|
+| `ps` | Show running processes | `ps aux` |
+| `top` | Real-time processes | `top` |
+| `kill` | Kill process by PID | `kill 1234` |
+
+---
+
+## 💾 Disk & Memory
+
+| Command | Description | Example |
+|--------|------------|--------|
+| `df` | Disk usage | `df -h` |
+| `du` | Directory size | `du -h` |
+| `free` | Memory usage | `free -h` |
+
+---
+
+## 🖥️ System Info
+
+| Command | Description | Example |
+|--------|------------|--------|
+| `uptime` | System running time | `uptime` |
+| `uname -a` | System details | `uname -a` |
+
+---
+
+## 🌐 Network Commands
+
+| Command | Description | Example |
+|--------|------------|--------|
+| `ifconfig` | Network config | `ifconfig` |
+| `netstat` | Network stats | `netstat -tuln` |
+| `ssh` | Remote login | `ssh user@ip` |
+| `scp` | Copy files remotely | `scp file user@ip:/path` |
+| `rsync` | Sync files | `rsync -av file dest` |
+
+---
+
+## 📦 Archive & Download
+
+| Command | Description | Example |
+|--------|------------|--------|
+| `tar` | Archive files | `tar -cvf file.tar dir/` |
+| `wget` | Download files | `wget url` |
+| `curl` | Transfer data | `curl url` |
+
+---
+
+## 🔧 Environment Variables
+
+| Command | Description | Example |
+|--------|------------|--------|
+| `env` | Show variables | `env` |
+| `export` | Set variable | `export VAR=value` |
+| `source` | Run script | `source file.sh` |
+| `alias` | Shortcut command | `alias ll='ls -l'` |
+
+---
+
+## ⏰ Scheduling
+
+| Command | Description | Example |
+|--------|------------|--------|
+| `crontab -e` | Edit cron jobs | `crontab -e` |
+
+---
+
+## 🔥 Service Management
+
+| Command | Description | Example |
+|--------|------------|--------|
+| `systemctl` | Manage services | `systemctl start nginx` |
+| `journalctl` | View logs | `journalctl -u nginx` |
+
+---
+
+## ✍️ Editors
+
+| Editor | Command |
+|-------|--------|
+| `vi` / `vim` | `vi file.txt` |
+| `nano` | `nano file.txt` |
+
+### 🔹 VI Editor Shortcuts
+- `Esc + :wq` → Save & exit  
+- `Esc + :q!` → Exit without saving  
+
+---
+
+## 📜 History
+
+| Command | Description |
+|--------|------------|
+| `history` | Show previous commands |
+
+---
+
+## 🎯 Quick Commands (Important)
+
+```bash
+free -h   # Memory usage (human readable)
+df -h     # Disk usage
+du -h     # Folder size

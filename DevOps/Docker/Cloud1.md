@@ -1,230 +1,213 @@
-# AWS DevOps Interview Questions & Answers
+# ☁️ AWS DevOps Interview Questions & Answers
 
 ---
 
 ## ☁️ Cloud Basics
 
-### Q1. What is Cloud Computing?
-
+### ❓ What is Cloud Computing?
 **Answer:**
 Cloud computing is the delivery of computing services like servers, storage, databases, networking, and software over the internet.
 
 ---
 
-### Q2. Types of Cloud?
-
-**Answer:**
-
-* Public Cloud → Shared infrastructure
-* Private Cloud → Dedicated infrastructure
-* Hybrid Cloud → Combination of both
+### ❓ Types of Cloud
+- Public Cloud → Shared infrastructure  
+- Private Cloud → Dedicated infrastructure  
+- Hybrid Cloud → Combination of both  
 
 ---
 
-### Q3. Service Models?
-
-**Answer:**
-
-* IaaS → Infrastructure (VMs, storage)
-* PaaS → Platform for development
-* SaaS → Ready-to-use software
+### ❓ Service Models
+- IaaS → Infrastructure (VMs, storage)  
+- PaaS → Platform for development  
+- SaaS → Ready-to-use software  
 
 ---
 
 ## 🖥️ Compute Services
 
-### Q4. What is EC2?
+### ❓ What is EC2?
+**Answer:** Virtual server used to run applications.
 
-**Answer:**
-Virtual server used to run applications.
+### ❓ What is Lambda?
+**Answer:** Serverless service to run code without managing servers.
 
-### Q5. What is Lambda?
+### ❓ ECS vs EKS
+- ECS → AWS native  (Elastic Container Service)
+- EKS → Kubernetes-based (Elastic Kubernetes Service) 
 
-**Answer:**
-Serverless service to run code without managing servers.
-
-### Q6. ECS vs EKS?
-
-**Answer:**
-
-* ECS → AWS native
-* EKS → Kubernetes-based
-
-### Q7. What is Fargate?
-
-**Answer:**
-Runs containers without managing servers.
+### ❓ What is Fargate?
+**Answer:** Runs containers without managing servers.
 
 ---
 
 ## 💾 Storage Services
 
-### Q8. What is S3?
+### ❓ What is S3?
+**Answer:** Object storage used for storing files.
 
-**Answer:**
-Object storage used for storing files.
+### ❓ What is EBS?
+**Answer:** Block storage attached to EC2.
 
-### Q9. What is EBS?
-
-**Answer:**
-Block storage attached to EC2.
-
-### Q10. EBS vs S3?
-
-**Answer:**
-
-* EBS → Block storage
-* S3 → Object storage
+### ❓ EBS vs S3
+- EBS → Block storage  
+- S3 → Object storage  
+- EFS → File Storage
 
 ---
 
 ## 🌐 Networking
 
-### Q11. What is VPC?
+### ❓ What is VPC?
+**Answer:** A logically isolated network in AWS.
 
-**Answer:**
-A logically isolated network in AWS.
+### ❓ What is Subnet?
+**Answer:** Subdivision of VPC.
 
-### Q12. What is Subnet?
+### ❓ What is Security Group?
+**Answer:** Instance-level firewall.
 
-**Answer:**
-Subdivision of VPC.
+### ❓ What is Internet Gateway?
+**Answer:** Provides internet access to VPC.
 
-### Q13. What is Security Group?
-
-**Answer:**
-Instance-level firewall.
-
-### Q14. What is Internet Gateway?
-
-**Answer:**
-Provides internet access to VPC.
-
-### Q15. What is NAT Gateway?
-
-**Answer:**
-Allows private instances to access internet.
+### ❓ What is NAT Gateway?
+**Answer:** Allows private instances to access internet.
 
 ---
 
 ## ⚖️ Load Balancing
 
-### Q16. What is Load Balancer?
+### ❓ What is Load Balancer?
+**Answer:** Distributes traffic across servers.
 
-**Answer:**
-Distributes traffic across servers.
-
-### Q17. Types of Load Balancer?
-
-**Answer:**
-
-* ALB
-* NLB
-* CLB
+### ❓ Types of Load Balancer
+- ALB → Application Load Balancer  
+- NLB → Network Load Balancer  
+- CLB → Classic Load Balancer  
 
 ---
 
 ## 🗄️ Database
 
-### Q18. What is RDS?
+### ❓ What is RDS?
+**Answer:** Managed relational database.
 
-**Answer:**
-Managed relational database.
-
-### Q19. What is DynamoDB?
-
-**Answer:**
-NoSQL database service.
+### ❓ What is DynamoDB?
+**Answer:** NoSQL database service.
 
 ---
 
 ## 🔐 Security
 
-### Q20. What is IAM?
+### ❓ What is IAM?
+**Answer:** Manages access and permissions.
 
-**Answer:**
-Manages access and permissions.
-
-### Q21. What is Role?
-
-**Answer:**
-Temporary permissions for services.
+### ❓ IAM Role vs User
+- IAM User → Long-term credentials  
+- IAM Role → Temporary permissions  
 
 ---
 
 ## 🚀 DevOps & CI/CD
 
-### Q22. What is CI/CD?
+### ❓ What is CI/CD?
+**Answer:** Continuous Integration and Deployment.
 
-**Answer:**
-Continuous Integration and Deployment.
-
-### Q23. AWS CI/CD tools?
-
-**Answer:**
-
-* CodeCommit
-* CodeBuild
-* CodeDeploy
-* CodePipeline
+### ❓ AWS CI/CD Tools
+- CodeCommit  
+- CodeBuild  
+- CodeDeploy  
+- CodePipeline  
 
 ---
 
 ## 🔥 Real-Time Scenarios
 
-### Q24. How to design highly available system?
+### ❓ Design Highly Available System
+- EC2 + Load Balancer  
+- Auto Scaling  
+- Multi-AZ RDS  
 
-**Answer:**
+---
 
-* EC2 + Load Balancer
-* Auto Scaling
-* Multi-AZ RDS
+### ❓ Deploy Docker App
+1. Build image  
+2. Push to ECR  
+3. Deploy using ECS/EKS  
 
-### Q25. How to deploy Docker app?
+---
 
-**Answer:**
+### ❓ Monitor Application
+**Answer:** Use CloudWatch.
 
-* Build image
-* Push to ECR
-* Deploy using ECS/EKS
+---
 
-### Q26. How to monitor application?
+### ❓ Reduce Cost
+- Auto Scaling  
+- Reserved Instances  
+- Remove unused resources  
 
-**Answer:**
-Use CloudWatch.
+---
 
-### Q27. How to reduce cost?
-
-**Answer:**
-
-* Use Auto Scaling
-* Reserved Instances
-* Remove unused resources
-
-### Q28. How to secure AWS?
-
-**Answer:**
-
-* IAM roles
-* MFA
-* Security Groups
+### ❓ Secure AWS
+- IAM roles  
+- MFA  
+- Security Groups  
 
 ---
 
 ## 🎯 Quick Revision
 
-* EC2 → Compute
-* S3 → Storage
-* VPC → Network
-* RDS → Database
-* IAM → Security
+| Service | Purpose |
+|--------|--------|
+| EC2 | Compute |
+| S3 | Storage |
+| VPC | Network |
+| RDS | Database |
+| IAM | Security |
 
 ---
 
-## 💡 Final Tip
+## 📦 Storage Types
 
-Always answer with:
+- Object Storage → S3  
+- Block Storage → EBS  
+- File Storage → EFS  
 
-* Architecture
-* Services used
-* Real-world example
+---
+
+## 🔁 Storage Differences
+
+| Type | Description | Use Case |
+|------|------------|----------|
+| S3 | Object storage | Files, backups |
+| EBS | Block storage | OS, databases |
+| EFS | File storage | Shared systems |
+
+---
+
+## 🔐 IAM Difference
+
+| IAM User | IAM Role |
+|----------|---------|
+| Permanent | Temporary |
+| Login access | Assumed access |
+
+---
+
+## 🌍 Additional Services
+
+### ❓ What is CloudFront?
+CDN service for low latency delivery.
+
+### ❓ What is AWS Direct Connect?
+Dedicated connection between on-premise and AWS.
+
+### ❓ What is Elastic Beanstalk?
+PaaS for deploying applications.
+
+### ❓ What is AWS Lightsail?
+Simple VPS for small applications.
+
+---
+
