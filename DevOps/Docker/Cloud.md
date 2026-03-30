@@ -77,3 +77,9 @@ AWS
 * What is Elastic Load balancer?
     * A Load Balancer is a service that distributes incoming network traffic across multiple servers (e.g., EC2 instances) to ensure high availability, reliability, and performance.
 
+
+* What is VPC?
+* What is subnet?
+* What is Natgatway?
+* What is Internet Gateway?
+* What is Security Group?
