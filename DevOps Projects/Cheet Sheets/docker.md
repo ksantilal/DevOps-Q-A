@@ -1,10 +1,29 @@
 # Docker Cheat Sheet
 
+- `docker info`
+- `docker pull nginx:1.27`
+- `docker (contaiiner)run -d --name web1 -P nginx:myapp`
+- `editor vi, vim, nano` 
+- `esc :wq,q!`
+- `docker inspect id`
+- `systemctl start doker`
+- `systemctl enable doker`
+- `systemctl status doker`
+
+- `sudo usermod -aG docker user(ubuntu)`
+- `docker login -u username` -> login docker
+- `chmod +x filename`
+
+
+
 ## 📦 Images
 - `docker build -t name .` → Build image
 - `docker images` → List images
+- `docker image ls`-> List all Images
 - `docker pull image` → Download image
 - `docker rmi image` → Remove image
+- `docker rmi $(docker images -q)` -> remove all images 
+- `docker rm $(docker ps -aq)` -> remove all container
 
 ## 📦 Containers
 - `docker run -d -p 80:80 image` → Run container (detached)
