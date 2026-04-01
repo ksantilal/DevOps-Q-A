@@ -8,6 +8,11 @@
     * Docker Client
     * Docker Server/Engine
 
+* Three Types of Docker Images.
+    * Base Image
+    * Intermediate Image
+    * Final Image
+
 ## 1. What is Docker?
 Docker is an open source tool that used to create, run, and manage containers.
 
@@ -34,7 +39,60 @@ An image is a blueprint used to create containers.
 ## 5. What is Dockerfile?
 A file with instructions to build a Docker image.
 
----
+* Explain Dockerfile?
+```Dockerfile
+# 1️⃣ FROM → Base image
+FROM ubuntu:20.04
+
+# 2️⃣ LABEL → Metadata
+LABEL maintainer="ksantilal" version="1.0"
+
+# 3️⃣ ARG → Build-time variable
+ARG APP_VERSION=1.0
+
+# 4️⃣ ENV → Runtime environment variable
+ENV APP_ENV=production
+
+# 5️⃣ WORKDIR → Set working directory
+WORKDIR /app
+
+# 6️⃣ RUN → Execute commands during build
+RUN apt-get update && apt-get install -y curl
+
+# 7️⃣ COPY → Copy files from local to container
+COPY . /app
+
+# 8️⃣ ADD → Copy + extract or download
+ADD https://example.com/file.tar.gz /app/
+
+# 9️⃣ USER → Run as non-root user
+RUN useradd -m myuser
+USER myuser
+
+# 🔟 EXPOSE → Inform Docker about port
+EXPOSE 8080
+
+# 1️⃣1️⃣ VOLUME → Create mount point
+VOLUME ["/app/data"]
+
+# 1️⃣2️⃣ HEALTHCHECK → Check container health
+HEALTHCHECK CMD curl -f http://localhost:8080 || exit 1
+
+# 1️⃣3️⃣ STOPSIGNAL → Signal to stop container
+STOPSIGNAL SIGTERM
+
+# 1️⃣4️⃣ SHELL → Change default shell
+SHELL ["/bin/bash", "-c"]
+
+# 1️⃣5️⃣ ENTRYPOINT → Main command (fixed)
+ENTRYPOINT ["echo", "Starting App..."]
+
+# 1️⃣6️⃣ CMD → Default arguments (can override)
+CMD ["Running..."]
+
+# 1️⃣7️⃣ ONBUILD → Trigger when used as base image
+ONBUILD COPY . /app
+```
 
 ## 6. What is Docker Hub?
 A registry to store and share Docker images.
