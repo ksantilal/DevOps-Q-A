@@ -35,3 +35,7 @@
 - `git remote remove origin` -> remove old remote repo
 - `git remote remove origin your repo` -> add new repo 
 - `git remote -v`-> verify repo
+
+
+- git branch -m feature1 feature-1 -> to rename branch
+- git branch -d feature1 -> remove the branch
