@@ -1,15 +1,21 @@
 # Running Website & Server Infrastructure
 
 ##  Idea
+
 * Understand how **websites run on servers**
 * Learn about **infrastructure layers**
    
 
----
 
-## 🖥️ Physical Servers
 
-### 📌 Overview
+## Physical Servers
+
+![Preview](image-1.png)
+
+## Hypervisor
+
+### Overview
+![Preview](image.png)
 - Traditional way of hosting applications
 - One server = one operating system = one workload
 
@@ -36,6 +42,7 @@
 ---
 
 ## 📦 Containers
+![Preview](image.png)
 
 ### 📌 Overview
 - Lightweight alternative to VMs
