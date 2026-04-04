@@ -1,9 +1,6 @@
 # 🚀 CI/CD Interview Questions & Answers
 
 ---
-
-# 🔹 BASIC CI/CD QUESTIONS
-
   🔹What is DevOps?
 
 ***Answer:***
