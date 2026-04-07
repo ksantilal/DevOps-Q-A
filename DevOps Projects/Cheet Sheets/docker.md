@@ -2,6 +2,12 @@
 
 - `docker info`
 - `docker pull nginx:1.27`
+
+### To build docker image
+- `docker image build -t fashion:1.0 .`
+
+* Now lets build the container with this image
+- `docker container run -d --name web1 -P fashion:1.0`
 - `docker (contaiiner)run -d --name web1 -P nginx:myapp`
 - `editor vi, vim, nano` 
 - `esc :wq,q!`
