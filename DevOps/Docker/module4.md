@@ -32,5 +32,9 @@ Docker Networking
 - `docker ps -a`
 - `docker logs id`
 - `docker network inspect two-tier`
-
-
+- `docker exec -it mysql bash`
+- `mysql -u root -p`
+- `password - root`
+- `show databases`
+- `use devops`
+- `select * from messages;`
