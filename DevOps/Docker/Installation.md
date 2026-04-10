@@ -112,8 +112,9 @@ CMD ["python","run.py"]
 * `docker exec -it containerid bash`
 - `mysql -u root -p`
 - `password - root`
-- `show databases`
+- `show databases;`
 - `create database devops`
+- `use devops` 
 - `exit` 
 
 * nodejs project

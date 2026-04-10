@@ -35,6 +35,7 @@ Docker Networking
 - `docker exec -it mysql bash`
 - `mysql -u root -p`
 - `password - root`
-- `show databases`
+- `use database devops`
+- `show databases;`
 - `use devops`
 - `select * from messages;`
