@@ -39,3 +39,18 @@ Docker Networking
 - `show databases;`
 - `use devops`
 - `select * from messages;`
+
+## Give network to containers
+* Steps
+* Create a network
+- `docker network create mynetwork -d bridge`
+- `docker network ls`
+
+* Give network to container
+* Mysql container 
+- `docker run -d --name mysql --network mynetwork mysql -e MYSQL_ROOT_PASSWORD=root -e MYSQL_DATABASE=devops mysql`
+
+* Connect both the container to same network for communicates each other
+* Flask-app container 
+-  `docker run -d -p 5000:5000 --network mynetwork -e MYSQL_HOST=mysql -e MYSQL_USER=root -e MYSQL_PASSWORD=root -e MYSQL_DB=devops two-tier-backend:latest`
+

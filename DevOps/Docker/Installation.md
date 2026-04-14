@@ -26,6 +26,12 @@ or
 - `sudo systemctl enable docker`
 - `sudo systemctl status docker`
 
+### mysql
+* Pull mysql image
+- `docker pull mysql`
+* Run mysql container
+- docker run -e MYSQL_ROOT_PASSWORD=root mysql
+
 ### Java Application
 
 * Steps
