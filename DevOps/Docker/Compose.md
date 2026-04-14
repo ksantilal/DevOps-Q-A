@@ -34,7 +34,6 @@ services:
 
   flask:
   
-
   web:
     build: .
     ports:
