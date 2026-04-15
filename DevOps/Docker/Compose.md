@@ -46,3 +46,6 @@ services:
     image: "redis:alpine"
 
 ```
+
+- `Docker compose up --build`
+- `Docker compose down`
