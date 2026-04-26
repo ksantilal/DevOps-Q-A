@@ -1,5 +1,5 @@
 Projects
-===============
+====================
 
 ### Java Application
 * Docker Container Project
