@@ -111,8 +111,8 @@ CMD ["python","run.py"]
 - `docker exec -it containerid bash` 
 
 * Mysql 
-- docker pull mysql
-- docker run -e MYSQL_ROOT_PASSWORD=root mysql
+- `docker pull mysql`
+- `docker run -e MYSQL_ROOT_PASSWORD=root mysql`
 
 * enter into the container
 * `docker exec -it containerid bash`
